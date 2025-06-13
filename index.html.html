@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تربية النحل في اليونان - خبرة طبيعية من قلب أوروبا</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#f59e0b',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Tajawal', sans-serif;
+}
+.hero-section {
+background-image: url('channels4_banner.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.bee-float {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  z-index: 9999;
+  pointer-events: none;
+  font-size: 2.5rem;
+  transition: transform 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<!-- Multiple Floating Bees -->
+<div id="bees-container"></div>
+<!-- Header & Navigation -->
+<header class="bg-white shadow-sm">
+<div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+<div class="flex items-center mb-4 md:mb-0">
+<img src="https://static.readdy.ai/image/373c0834b6ac35eecab65342ad730c8d/b737e99ad6138c5516f580f7ac50a15b.jpeg" alt="تربية النحل في اليونان" class="w-12 h-12 object-cover">
+<h1 class="mr-3 text-xl font-bold text-[#b35c00]">تربية النحل في اليونان</h1>
+</div>
+<nav>
+<ul class="flex space-x-1 space-x-reverse">
+<li><a href="#" class="px-4 py-2 rounded-button text-primary font-medium hover:bg-primary/10 whitespace-nowrap">الرئيسية</a></li>
+<li><a href="#about" class="px-4 py-2 rounded-button font-medium hover:bg-gray-100 whitespace-nowrap">من نحن</a></li>
+<li><a href="#videos" class="px-4 py-2 rounded-button font-medium hover:bg-gray-100 whitespace-nowrap">الفيديوهات</a></li>
+<li><a href="https://youtube.com/@raoofomarbl?si=H-0cviikH8KGaTqO" target="_blank" class="px-4 py-2 bg-red-600 text-white rounded-button hover:bg-red-700 whitespace-nowrap">تابعنا على يوتيوب</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section w-full min-h-[600px] flex items-center">
+<div class="container mx-auto px-6 py-16 w-full">
+<div class="max-w-xl">
+<div class="bg-black bg-opacity-80 rounded-xl p-8 mb-8">
+<h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-[#b35c00]">تربية النحل في اليونان</h1>
+<h2 class="text-2xl md:text-3xl font-medium mb-6 text-[#b35c00]">خبرة طبيعية من قلب أوروبا</h2>
+<p class="text-lg mb-8 leading-relaxed text-[#b35c00]">تابع مغامرتنا في تربية النحل وسط الطبيعة الخلابة لليونان، واكتشف أسرار العسل الطبيعي النقي وفوائده المذهلة للصحة.</p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a href="#videos" class="px-6 py-3 bg-red-600 text-white rounded-button hover:bg-red-700 flex items-center gap-2 whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-play-circle-line"></i>
+</div>
+<span>شاهد فيديوهاتنا</span>
+</a>
+<a href="#about" class="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-button hover:bg-gray-50 flex items-center gap-2 whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-information-line"></i>
+</div>
+<span>تعرف علينا</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section id="about" class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 flex items-center justify-center text-2xl text-primary">
+<i class="ri-compass-3-line"></i>
+</div>
+<h2 class="text-3xl font-bold">من نحن</h2>
+</div>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+"تربية النحل في اليونان" هي قناة يوتيوب مخصصة للمشاركة تجربة فريدة في عالم تربية النحل داخل الطبيعة اليونانية الساحرة.
+</p>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+نحن ندمج بين التقنيات الحديثة والأساليب التقليدية القديمة لنقدم لك محتوى تعليميًا وممتعًا ومُلهمًا لكل من وقع في حب عالم النحل.
+</p>
+<p class="text-lg text-gray-700 leading-relaxed">
+تأسست القناة عام 2020 بواسطة مجموعة من مربي النحل المحترفين الذين يمتلكون خبرة تزيد عن 15 عامًا في مجال تربية النحل وإنتاج العسل الطبيعي.
+</p>
+</div>
+<div class="w-full md:w-1/2">
+<div class="relative rounded-xl overflow-hidden shadow-xl h-[400px]">
+<img src="https://static.readdy.ai/image/373c0834b6ac35eecab65342ad730c8d/177b0a451408739aeddd2b15ec8ad687.jpeg" alt="مربي النحل في اليونان" class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What We Offer Section -->
+<section id="videos" class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<div class="flex items-center justify-center gap-3 mb-4">
+<div class="w-10 h-10 flex items-center justify-center text-2xl text-primary">
+<i class="ri-video-line"></i>
+</div>
+<h2 class="text-3xl font-bold">ماذا نقدم؟</h2>
+</div>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">نقدم محتوى متنوعًا وغنيًا يناسب جميع المهتمين بتربية النحل، من المبتدئين حتى المحترفين</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover flex flex-col">
+  <div class="relative h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/SCOfdPYS9jI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <h3 class="text-xl font-bold mb-3 text-gray-800">فيديو تعليمي 1</h3>
+    <p class="text-gray-600 mb-4">شاهد هذا الفيديو حول تربية النحل في اليونان.</p>
+    <a href="https://youtu.be/SCOfdPYS9jI?si=GSsZTniLoxbZScsh" target="_blank" class="text-primary font-medium flex items-center gap-2 hover:underline">
+      <span>مشاهدة على يوتيوب</span>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-arrow-left-line"></i>
+      </div>
+    </a>
+  </div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover flex flex-col">
+  <div class="relative h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/5jc60CMIWLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <h3 class="text-xl font-bold mb-3 text-gray-800">فيديو تعليمي 2</h3>
+    <p class="text-gray-600 mb-4">تعلم المزيد عن أسرار النحل في هذا الفيديو.</p>
+    <a href="https://youtu.be/5jc60CMIWLs?si=abHiQkM6dBSbzdWc" target="_blank" class="text-primary font-medium flex items-center gap-2 hover:underline">
+      <span>مشاهدة على يوتيوب</span>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-arrow-left-line"></i>
+      </div>
+    </a>
+  </div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover flex flex-col">
+  <div class="relative h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/JiS_bJ1xfbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="p-6 flex-1 flex flex-col justify-between">
+    <h3 class="text-xl font-bold mb-3 text-gray-800">فيديو تعليمي 3</h3>
+    <p class="text-gray-600 mb-4">اكتشف تحديات تربية النحل في هذا الفيديو.</p>
+    <a href="https://youtu.be/JiS_bJ1xfbo?si=k-xTdKH7ZFtkT_Um" target="_blank" class="text-primary font-medium flex items-center gap-2 hover:underline">
+      <span>مشاهدة على يوتيوب</span>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-arrow-left-line"></i>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+<!-- قناة اليوتيوب -->
+<div class="text-center mt-8">
+  <a href="https://youtube.com/@raoofomarbl?si=-QPGJ6mpPfl4auMI" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-button hover:bg-red-700 whitespace-nowrap text-lg font-bold">
+    تابع قناتنا على يوتيوب
+    <i class="ri-youtube-fill align-middle ml-2"></i>
+  </a>
+</div>
+</div>
+</section>
+<!-- Featured Videos Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<div class="flex items-center justify-center gap-3 mb-4">
+<div class="w-10 h-10 flex items-center justify-center text-2xl text-primary">
+<i class="ri-film-line"></i>
+</div>
+<h2 class="text-3xl font-bold">أحدث الفيديوهات</h2>
+</div>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">تابع أحدث إصداراتنا من الفيديوهات التعليمية والممتعة حول عالم النحل</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video 1 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+<div class="relative h-52 overflow-hidden bg-gray-100">
+<iframe class="w-full h-full" src="https://www.youtube.com/embed/oNccv3OxLbU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">تربية النحل في اليونان</h3>
+<p class="text-gray-500 mb-3 text-sm">نُشر في 10 يونيو 2025 • 15:42 دقيقة</p>
+<p class="text-gray-600">تعلم الطريقة الصحيحة لتربية النحل في اليونان مع الحفاظ على جودة العسل وفوائده الطبيعية.</p>
+</div>
+</div>
+<!-- Video 2 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+<div class="relative h-52 overflow-hidden bg-gray-100">
+<iframe class="w-full h-full" src="https://www.youtube.com/embed/yec15o-4W44" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">تربية النحل في اليونان - الجزء الثاني</h3>
+<p class="text-gray-500 mb-3 text-sm">نُشر في 28 مايو 2025 • 18:15 دقيقة</p>
+<p class="text-gray-600">استكمال رحلة تعلم تربية النحل في اليونان مع المزيد من النصائح والخبرات.</p>
+</div>
+</div>
+<!-- Video 3 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+<div class="relative h-52 overflow-hidden bg-gray-100">
+<iframe class="w-full h-full" src="https://www.youtube.com/embed/-GHjIHHS5k0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2 text-gray-800">تربية النحل في اليونان - الجزء الثالث</h3>
+<p class="text-gray-500 mb-3 text-sm">نُشر في 5 مايو 2025 • 12:30 دقيقة</p>
+<p class="text-gray-600">المزيد من المعلومات والخبرات في تربية النحل في اليونان.</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="#" class="inline-block px-6 py-3 bg-red-600 text-white rounded-button hover:bg-red-700 whitespace-nowrap">عرض جميع الفيديوهات</a>
+</div>
+</div>
+</section>
+<!-- Quran Verse Section -->
+<section class="w-full py-10 bg-yellow-50 border-t border-yellow-200 mt-10">
+  <div class="container mx-auto px-4 text-center">
+    <p class="text-2xl md:text-3xl font-semibold text-yellow-900 leading-relaxed" style="font-family: 'Tajawal', serif;">
+      ﴿ وَأَوْحَىٰ رَبُّكَ إِلَى النَّحْلِ أَنِ اتَّخِذِي مِنَ الْجِبَالِ بُيُوتًا وَمِنَ الشَّجَرِ وَمِمَّا يَعْرِشُونَ﴾<br>
+      <span class="text-lg text-yellow-700">[ النحل: 68 ]</span>
+    </p>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="flex items-center mb-6">
+<img src="https://static.readdy.ai/image/373c0834b6ac35eecab65342ad730c8d/b737e99ad6138c5516f580f7ac50a15b.jpeg" alt="تربية النحل في اليونان" class="w-10 h-10 object-cover">
+<h3 class="mr-3 text-xl font-bold">تربية النحل</h3>
+</div>
+<p class="text-gray-400 mb-6">خبرة طبيعية من قلب أوروبا، نشارك معك أسرار تربية النحل وإنتاج العسل الطبيعي في اليونان.</p>
+<div class="flex space-x-4 space-x-reverse">
+<a href="https://youtube.com/@raoofomarbl?si=H-0cviikH8KGaTqO" target="_blank" class="w-10 h-10 rounded-full bg-red-600/10 flex items-center justify-center hover:bg-red-600/20">
+<div class="w-5 h-5 flex items-center justify-center text-red-600">
+<i class="ri-youtube-fill"></i>
+</div>
+</a>
+<a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbTN2ay1UZ0xDRTNpTW9LRkJEQ09PY240SmZid3xBQ3Jtc0trZ2x5RmlocmtBRG9Va2F4SDFjQ0QzLTFfYmM4SlVZQm5ZcTQ1dHJhUVBBQlNSbDg1N1NmajZUS0JxWm9qUDV6Qmp2UTVGUmV0RU5MOXlZNDRfaGZWWk5TVTh2Mmt6aWQ5dnd2MUpCZXNuc3Z3SUhVOA&q=https%3A%2F%2Fm.facebook.com%2Fpages%2Fcategory%2FPersonal-Blog%2F%25D8%25AA%25D8%25B1%25D8%25A8%25D9%258A%25D8%25A9-%25D8%25A7%25D9%2584%25D9%2586%25D8%25AD%25D9%2584-%25D9%2581%25D9%258A-%25D8%25A7%25D9%2584%25D9%258A%25D9%2588%25D9%2586%25D8%25A7%25D9%2586--108482234619395%2F" target="_blank" class="w-10 h-10 rounded-full bg-blue-600/10 flex items-center justify-center hover:bg-blue-600/20">
+  <div class="w-5 h-5 flex items-center justify-center text-blue-600">
+    <i class="ri-facebook-fill"></i>
+  </div>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">روابط سريعة</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary">الرئيسية</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-primary">من نحن</a></li>
+<li><a href="#videos" class="text-gray-400 hover:text-primary">الفيديوهات</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">الفيديوهات</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary">أساسيات تربية النحل</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">إنتاج العسل</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">الأمراض والآفات</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">منتجات النحل</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+<p class="text-gray-400">© 2025 تربية النحل في اليونان. جميع الحقوق محفوظة.</p>
+</div>
+</div>
+</footer>
+<script id="mobileNavScript">
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile navigation functionality would go here
+// This is a placeholder for mobile navigation toggle
+});
+</script>
+<script id="videoPlayerScript">
+document.addEventListener('DOMContentLoaded', function() {
+const playButtons = document.querySelectorAll('.video-play-button');
+// This is a placeholder for video player functionality
+// In a real implementation, clicking on play buttons would trigger video playback
+});
+</script>
+<script>
+const BEE_COUNT = 8;
+function randomBeePosition(bee) {
+  const padding = 40;
+  const maxX = window.innerWidth - bee.offsetWidth - padding;
+  const maxY = window.innerHeight - bee.offsetHeight - padding;
+  const x = Math.random() * maxX;
+  const y = Math.random() * maxY;
+  bee.style.transform = `translate(${x}px, ${y}px)`;
+}
+function startBeesAnimation() {
+  const container = document.getElementById('bees-container');
+  for (let i = 0; i < BEE_COUNT; i++) {
+    const bee = document.createElement('div');
+    bee.className = 'bee-float';
+    bee.style.top = '20%';
+    bee.style.left = '10%';
+    bee.innerText = '🐝';
+    container.appendChild(bee);
+    // Stagger the movement for each bee
+    setTimeout(() => {
+      randomBeePosition(bee);
+      setInterval(() => randomBeePosition(bee), 2000 + Math.random() * 1000);
+    }, i * 300);
+  }
+}
+document.addEventListener('DOMContentLoaded', startBeesAnimation);
+</script>
+</body>
+</html>
